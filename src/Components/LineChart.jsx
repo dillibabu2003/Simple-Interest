@@ -9,6 +9,7 @@ export default function Chart({ points }) {
             type: 'areaspline',
             styleMode: true,
             backgroundColor: 'transparent',
+            height:'300'
 
         },
 
