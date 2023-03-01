@@ -1,0 +1,87 @@
+.input {
+    font-size: large;
+    width: 8rem;
+    background: none;
+    background-color: rgba(209, 227, 255, 0.39);
+    border-radius: 6.25rem;
+    border: 2px solid #9BB0D3;
+    color: black;
+    outline: none;
+    padding: 0.5rem 0rem;
+    margin: 0.2rem;
+    text-align: center;
+}
+
+.inputBox {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: transparent;
+    color: black;
+    justify-content: space-between;
+    padding: 0.2em 0.2em 0.2em 0.3em;
+    margin: 0.5rem 0;
+}
+
+
+
+.inputBox input[type="range"] {
+    -webkit-appearance: none;
+    background: #DCE8F8;
+
+    height: 8px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 13.25rem;
+}
+
+
+.inputBox input[type="range"]::-webkit-slider-runnable-track {
+    -webkit-appearance: none;
+    border-radius: 10px;
+    height: 8px;
+}
+
+.inputBox input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    margin-top: -4.5px;
+    height: 18px;
+    width: 18px;
+    border-radius: 3px;
+    background-color: #DFFDEE;
+    border-radius: 50%;
+    border: 2px solid #00D87A;
+    cursor: pointer;
+}
+
+.inputBox input[type="range"]::-moz-range-progress {
+    background: #00D382;
+    border-radius: 10px;
+    height: 0.5rem;
+}
+
+.inputBox input[type="range"]::-moz-range-track {
+    background: #DCE8F8;
+    border-radius: 10px;
+    height: 0.5rem;
+}
+
+.inputBox input[type=range]::-moz-range-thumb {
+    height: 18px;
+    width: 18px;
+    border-radius: 3px;
+    background: #DFFDEE;
+    border: 2px solid #00D87A;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.inputBox input[type=range]::-ms-thumb {
+    height: 18px;
+    width: 18px;
+    border-radius: 3px;
+    background: #DFFDEE;
+    border-radius: 50%;
+    border: 2px solid #00D87A;
+    cursor: pointer;
+}

@@ -1,0 +1,229 @@
+.heading {
+  color: #1B1C20;
+  font-size: 2.875rem;
+  font-weight: 600;
+  line-height: 1.2;
+  text-align: center;
+  background-color: transparent;
+  font: normal normal 600 36px/70px Poppins;
+}
+
+.subheading {
+  text-align: center;
+  margin: 1rem 0rem;
+  font-size: 1.25rem;
+  color: #464143;
+  opacity: 1;
+  font: normal normal Poppins;
+}
+
+.bluecolor {
+  color: #0161FF;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: fixed;
+}
+
+.calculatorWrapper {
+
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: inherit;
+  width: 100%;
+  margin: 1rem 0rem;
+  max-height: 34rem;
+  min-width: 40rem;
+}
+
+.calculator {
+  padding: 0.2rem;
+  display: flex;
+  box-shadow: 0px 3px 5px #505C6227;
+  border: 0.15rem solid #FFFFFF;
+  border-radius: 1.875rem;
+  background-color: rgba(255, 255, 255, 0.4);
+  opacity: 1;
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  width: 75%;
+  max-height: inherit;
+
+  /* border-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgba(255, 255, 255, var(--tw-border-opacity));
+  background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+  --tw-bg-opacity: 0.3;
+  --tw-shadow: 0px 3px 5px #505c6227 inset, 0px 3px 5px #505c6227;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  --tw-backdrop-blur: blur(30px);
+  backdrop-filter: var(--tw-backdrop-filter); */
+}
+
+.inputWrapper {
+  color: black;
+  text-align: left;
+  padding: 2rem;
+  font-size: 1.5rem;
+  width: 100%;
+}
+
+.input_container {
+  display: flexbox;
+  flex-wrap: wrap;
+  text-align: left;
+  justify-content: space-evenly;
+  padding: 10px 0;
+  width: 100%;
+}
+
+.control_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  cursor: pointer;
+}
+
+.buttonBorder {
+  border: 0.1rem dashed #36b366;
+  padding: 4px;
+  width: 65%;
+  border-radius: 35px;
+  display: block;
+  box-sizing: border-box;
+}
+
+.button {
+  cursor: pointer;
+  text-align: center;
+  color: white;
+  font-family: inherit;
+  margin: 0;
+  font-weight: 600;
+  border-radius: 35px;
+  color-scheme: light;
+  padding: 0.3rem;
+}
+
+.calculate {
+  color: rgba(255, 255, 255, 1);
+  box-shadow: 0 10px 20px #36b3665d;
+  background-color: #00d382;
+}
+
+.output_box {
+  display: flex;
+  margin: 0.5rem;
+  background: transparent;
+  padding: 0.5rem;
+  justify-content: center;
+}
+
+
+.verticalline {
+  position: relative;
+  margin: 0.3rem 1rem;
+  width: 0px;
+  border-radius: 50px;
+  border: 2px solid #7070701A;
+  opacity: 1;
+}
+
+
+.chartContainer {
+  height: 100%;
+  padding: 0.2rem;
+}
+
+.toggle {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0rem 0.1rem;
+  width: 3.813rem;
+  height: 2.063rem;
+  padding: 0.2rem;
+  border-radius: 30px;
+  border: 2px solid rgba(255, 255, 255, 1);
+  background-color: #505C6227;
+  box-shadow: 0px 3px 5px #505C6227;
+  opacity: 1;
+  backdrop-filter: blur(30px);
+  align-items: center;
+}
+
+.icon1 {
+  width: 1.4375rem;
+  height: 1.4375rem;
+  background: local;
+  border-radius: 50px;
+  color: #909090;
+  border: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.icon2 {
+  width: 1.4375rem;
+  height: 1.4375rem;
+  border-radius: 50px;
+  border: none;
+  color: white;
+  background-color: #0161FF;
+  border: 2px solid rgba(255, 255, 255, 1);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.chart {
+  height: 20rem;
+  width: 25rem;
+}
+
+
+.sidePannel {
+  box-shadow: 0px 3px 5px #505C6227;
+  border: 0.15rem solid #FFFFFF;
+  border-radius: 1.875rem;
+  opacity: 1;
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  width: 24%;
+  padding: 1.3rem 1.2rem;
+  overflow-y: scroll;
+  max-height: inherit;
+}
+
+
+
+
+.faq {
+  margin: 1rem 0rem;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 3px 5px #505C6227;
+  border: 2px solid #FFFFFF;
+  border-radius: 30px;
+  opacity: 1;
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+}
+
+.relatedCalculators {
+  margin: 1rem 0rem;
+  opacity: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
