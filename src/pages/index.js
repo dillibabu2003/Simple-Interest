@@ -18,9 +18,10 @@ export default function Home() {
   const [totalInvestment, settotalInvestment] = useState(100000);
   const [interestRate, setinterestRate] = useState(5);
   const [timePeriod, settimePeriod] = useState(5);
-
-  let simpleInterest = 25000;
+  
+  let simpleInterest = 0;
   const [output, setOutput] = useState(25000);
+  const [totalAmount, settotalAmount] = useState(125000);
 
   const [isLineChart, setCheck] = useState(true);
   const [graphPoints, setGraphPoints] = useState([5000, 10000, 15000, 20000, 25000]);
@@ -34,7 +35,8 @@ export default function Home() {
     else {
       setOutput(simpleInterest);
     }
-
+    settotalAmount(simpleInterest+totalInvestment);
+    
     calculateGraphPoints();
   }
 
@@ -124,11 +126,6 @@ export default function Home() {
                   <div className={`${styles.calculate} ${styles.button}`} onClick={calculate}>Calculate</div>
                 </div>
               </div>
-
-              <div className={styles.output_box}>
-                {/*CARG output*/}
-                <div id="simpleInterest_output">simpleInterest {(output === '-') ? output : `is ${output}`}</div>
-              </div>
             </div>
 
             {/* vertical line */}
@@ -144,6 +141,26 @@ export default function Home() {
 
               <div className={styles.chart}>
               {isLineChart ? <LineChart points={graphPoints} />: <DoughnutChart simpleInterestAmount={output} totalInvestmentAmount={totalInvestment} dependency={output} />}
+              </div>
+              <div>
+              {isLineChart ? <div id="simpleInterest_output">{(output === '-') ? 
+                output :<> <div>For an investment of  <b>Rs.{totalInvestment}</b> at {interestRate}% simple interest for a period of <b>{timePeriod} years</b>,
+                the simple interest earned will be <b>Rs.{output}</b></div></>}</div>: 
+               
+               <div id="simpleInterest_output">{(output === '-') ? output : 
+                <div>
+                  <div className={styles.doughnutOutput}>
+                    <p>Principal</p><p><b>₹{totalInvestment}</b></p>
+                  </div>
+                  <div className={styles.doughnutOutput}>
+                    <p>Total Interest</p><p><b>₹{output}</b></p>
+                  </div>
+                  <div className={styles.doughnutOutput}>
+                    <p>Total Amount </p><p><b>₹{totalAmount}</b></p>
+                  </div>
+                  </div>
+                    }</div>
+                }
               </div>
 
             </div>

@@ -217,3 +217,9 @@
   flex-direction: row;
   justify-content: left;
 }
+
+.doughnutOutput{
+  position:relative;
+  display:flex;
+  justify-content: space-between;
+}
