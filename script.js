@@ -345,6 +345,202 @@
 
 
 
+// console.log(1+'2')
+// console.log(1+true)
+// console.log('1'+true)
+// console.log(2*false)
+
+
+                  //OBJECT DESTRUCTION
+// const obj={
+//     name:'sneha',
+//     age:22,
+//     height:5
+// }
+// :  ->alias name
+// =  ->default value
+// const {age,name:n,height:h=5.9}=obj
+
+// console.log(age,n,h)
+// console.log(obj.mark)  //undefined
+// console.log(obj.mark.maths) //throws error
+            //  |
+            //  |
+            //  |->to overcome this we can use or operator
+// const address=obj.address||{}
+// console.log(address.state)
+// const {address={state:'TN'}}=obj
+
+
+            //ES11 feature => ?. to overcome the above problem
+// console.log(obj?.address?.state || 'TN')
+
+
+
+                //FOR IN LOOP -> can access only keys
+// for(var key in obj){
+//     console.log(key+":"+obj[key]);
+// }
+
+
+
+
+// console.log(1+'2')
+// console.log(1+true)
+// console.log('1'+true)
+// console.log(2*false)
+
+
+                  //OBJECT DESTRUCTION
+// const obj={
+//     name:'sneha',
+//     age:22,
+//     height:5
+// }
+// :  ->alias name
+// =  ->default value
+// const {age,name:n,height:h=5.9}=obj
+
+// console.log(age,n,h)
+// console.log(obj.mark)  //undefined
+// console.log(obj.mark.maths) //throws error
+            //  |
+            //  |
+            //  |->to overcome this we can use or operator
+// const address=obj.address||{}
+// console.log(address.state)
+// const {address={state:'TN'}}=obj
+
+
+            //ES11 feature => ?. to overcome the above problem
+// console.log(obj?.address?.state || 'TN')
+
+
+
+                //FOR IN LOOP -> can access only keys
+// for(var key in obj){
+//     console.log(key+":"+obj[key]);
+// }
+
+
+             
+
+
+// const obj=[{
+//     name:"Ram",
+//     age:22,
+//     height:5
+// },{
+//     name:"Nandha",
+//     age:25,
+//     height:6.1
+// }]
+
+// //my solution
+// obj.map((user)=>user.age+=2)
+// console.log(obj)
+
+
+//solution
+// const res=obj.map(
+//     (user)=>{
+//     return {...user,age:user.age+2}
+//      }
+// )
+
+// console.log(res)
+
+// const obj={
+//     a:1,
+//     b:2,
+//     c:3,
+//     a:4
+// }
+// console.log(obj)
+
+
+
+
+// const user=[{
+//    id:1,
+//    name:"Ram",
+//    age:20
+// },{
+//     id:2,
+//     name:"Nandha",
+//     age:22
+// }]
+
+// const addUser=(obj){
+
+// }
+// const getUser=(id){
+
+// }
+// const editUser =(id,key,value){
+
+// }
+// const deleteUser=(id){
+
+// }
+
+
+const user=[{
+    id:1,
+    name:"Ram",
+    age:20
+},{
+    id:2,
+    name:"Nandha",
+    age:22
+}]
+
+const addUser=(obj)=>{
+   user.push(obj)  
+}
+const getUser=(id)=>{
+    for(var ele of user){
+        if(ele.id==id){
+            return ele;
+        }
+    }
+}
+ const editUser =(id,key,value)=>{
+      for(var ele of user){
+        if(ele.id==id){
+            ele[key]=value;
+            return;
+        }
+    }
+ }
+const deleteUser=(id)=>{
+         var i=0;
+         for(var ele of user){
+             if(ele.id==id){
+                user.splice(i,1);
+                return;
+             }
+             i++;
+             
+         }
+}
+addUser({id:3,name:"Gokul",age:19});
+console.log(user);
+console.log(getUser(3));
+editUser(3,"name","Girija")
+console.log(user);
+deleteUser(3);
+console.log(user);
+
+
+
+
+
+
+
+
+
+
 
 
 
