@@ -1,3 +1,6 @@
+ 
+ //********************************************************DAY 1**********************************************************//
+
  //               JAVASCRIPT TUTORIAL
 
  //duck type language
@@ -170,7 +173,7 @@
 //     return str.split(tar).join(char);
 // }
 // let str1="Hello World";
-// let ans=replace(str1,'o','a');
+// let ans=replace(str1,'a','o');
 // console.log(ans);
 
 
@@ -198,9 +201,148 @@
 //     }
    
 // },3000);
+         
 
 
-       
+//********************************************************DAY 2******************************************************************************//
+
+    // Synchronous and Asynchronous Example
+// setTimeout(()=>{
+//     console.log("1")
+// },0)
+// console.log('2')
+
+
+      //for of loop
+// let arr=[11,2,30]
+// for(var ele of arr){
+//     (ele%2===0)?console.log(`${ele} is even`):console.log(`${ele} is odd`);
+// }
+
+
+// let arr=[1,2,3,4];
+// arr.splice(2,1);
+// console.log(arr);
+
+
+// let arr=new Array(1,"raju",[1,2,3]);
+// console.log(arr);
+
+
+// let arr=new Array(5);
+// arr[2]=1;
+// console.log(arr)
+
+
+
+// const multiply=(arr,num)=>{
+//     let ans=[];
+//     arr.forEach((element)=>ans.push(element*num));
+//     return ans;
+// }
+// let ans=multiply([1,2,3,4],2);
+// console.log(ans);
+
+
+               //MAP
+               
+// const multiply=(arr,num)=>{
+//     let ans=arr.map((element)=>element*2);
+//     return ans;
+// }
+// let ans=multiply([1,2,3,4],2);
+// console.log(ans);
+
+
+// one line -> implicit return
+// const oddEven=(arr)=>{
+//     let ans=arr.map((ele)=>(ele%2 === 0)?"Even":"Odd");
+//     return ans;
+// }
+// const res=oddEven([1,2,3,4])
+// console.log(res)
+
+            //FILTER
+// const filterEven=(arr)=>{
+//     let ans=arr.filter((element)=>element%2===0);
+//     return ans;
+// }
+
+// const res=filterEven([1,2,3,4,5,6])
+// console.log(res)
+
+// const arr1=[1,2,3]
+// const arr2=arr1
+// console.log(arr1===arr2);
+// arr1[0]=10
+// console.log(arr1===arr2);
+// console.log('arr1=>',arr1);
+// console.log('arr2=>',arr2);
+
+            //SPREAD OPERATOR
+// const arr1=[1,2,3]
+// const arr2=[...arr1];
+// console.log(arr1===arr2);
+// arr1[0]=10
+// console.log(arr1===arr2);
+// console.log('arr1=>',arr1);
+// console.log('arr2=>',arr2);
+
+        //SPREAD OPERATOR JOINING MULTIPLE ARRAYS
+// const arr1=[1,2,3]
+// const arr2=[4,5,6]
+// const arr3=[...arr1,...arr2];
+// console.log(arr3);
+
+
+
+            //DESTRUCTING
+// const arr1=[1,2,3];
+// const [a,b,c]=arr1;
+// console.log(a,b,c);
+
+// const [a,b]=arr1;
+// console.log(a,b);
+
+// const [_,a,b]=arr1;
+// console.log(a,b);
+
+// arr2=[1,2,3,4,5,6]
+// const[a,b,...rest]=arr2;
+// console.log(a,b,rest)
+
+
+
+         //OBJECTS
+// var emptyObj={}
+// var personObject={
+//     firstName:"john",
+//     lastName:"smith"
+// }
+// personObject.age=23;
+// personObject["salary"]=50000;
+// console.log(personObject)
+
+
+// const student={
+//     name:"Ram",
+//     cls:"cls",
+//     marks:{
+//         english:90,
+//         maths:100,
+//         science:75
+//     }
+// }
+// const sub="maths";
+// console.log(student.marks.maths)
+// console.log(student.marks[sub])
+
+// const printMarks =(obj,sub)=>{
+//     return `${obj.name}'s ${sub} mark is ${obj.marks[sub]}`;
+// }
+// console.log(printMarks(student, "science"));
+
+
 
 
 
